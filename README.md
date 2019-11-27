@@ -25,30 +25,11 @@
 				* 一般用于聚合函数的查询
 
 		4. 练习：
-			* 需求：db3 emp表
-				1. 修改1号数据的 salary 为 10000
+			* 需求：db1 custom_info表
+				1. 修改1号数据的 I_Level 为 L2
 				2. 添加一条记录
 				3. 删除刚才添加的记录
 				4. 查询id为1的记录，将其封装为Map集合
 				5. 查询所有记录，将其封装为List
 				6. 查询所有记录，将其封装为Emp对象的List集合
 				7. 查询总记录数
-
-			* 代码：
-				
-				import cn.itcast.domain.Emp;
-				import cn.itcast.utils.JDBCUtils;
-				import org.junit.Test;
-				import org.springframework.jdbc.core.BeanPropertyRowMapper;
-				import org.springframework.jdbc.core.JdbcTemplate;
-				import org.springframework.jdbc.core.RowMapper;
-				
-				import java.sql.Date;
-				import java.sql.ResultSet;
-				import java.sql.SQLException;
-				import java.util.List;
-				import java.util.Map;
-				
-				public class JdbcTemplateDemo2 {
-				
-				    //Junit单元测试，可以让方法独立执行
